@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                 echo 'Jenkins va installer les deps du projet'
                 ls -al 
-                npm i
+                npm ci
                 echo 'Jenkins va créer le build'
                 npm run build
                 echo 'fin'
