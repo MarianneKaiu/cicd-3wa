@@ -10,7 +10,7 @@ pipeline {
                 }
             }
             steps {
-                ''' sh
+                sh '''
                 echo 'Jenkins va installer les deps du projet'
                 ls -al 
                 npm i
