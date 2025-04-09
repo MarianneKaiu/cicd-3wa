@@ -10,6 +10,7 @@ pipeline {
                 }
             }
             steps {
+                ''' sh
                 echo 'Jenkins va installer les deps du projet'
                 ls -al 
                 npm i
@@ -17,6 +18,7 @@ pipeline {
                 npm run build
                 echo 'fin'
                 ls -al
+                '''
             }
         }
     }
